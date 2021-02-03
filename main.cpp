@@ -59,7 +59,17 @@ T minim(T a, T b)
 
 int main() {
 
-    
+    //2.2.1 Member Functions
+    //an object of type Person(BASE) can accesspublic members of both classes
+    //However if student(CHILD) invokes the shared 'print' function
+    //it will use its own by default
+
+    //declare person object
+    Person pson("Mary ", "12-11");
+    Student st("Bob", "21-22", "Mathematics", 2024);
+
+    pson.print();
+    st.print();
 
 	return 0;
 }
