@@ -12,10 +12,9 @@ public:
 	//ctor
 	Student() = default;
 	//ctor
-	Student::Student(std::string nm, std::string idNum,
+	Student(std::string nm, std::string idNum,
 		std::string deg, int year)
 		: Person{ nm , idNum }, m_Major{ deg }, m_GradYr{ year }
-		//member list initzer
 	{
 		std::cout << "two -arg Student ctor" << "\n";
 	}

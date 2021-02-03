@@ -4,14 +4,14 @@
 #include <algorithm>
 #include <string>
 #include <stack>
-#include "Stu.h"
-#include "Person.h"
+#include "2. OO Design/Stu.h"
+#include "2. OO Design/Person.h"
 #include "Progression.h"
 #include "Arithmetic.h"
 #include "Geometric.h"
-#include "ArrayStack.h"
-#include "LinkedListStack.h"
-#include "DLLdeque.h"
+#include "Stacks/ArrayStack.h"
+#include "Stacks/LinkedListStack.h"
+#include "Deque/DLLdeque.h"
 #include "Vector.h"
 
 
