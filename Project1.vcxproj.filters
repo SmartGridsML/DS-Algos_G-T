@@ -80,9 +80,6 @@
     <ClInclude Include="Progression.h">
       <Filter>Inheritance/Polymorphism</Filter>
     </ClInclude>
-    <ClInclude Include="Person.h">
-      <Filter>Inheritance/Polymorphism</Filter>
-    </ClInclude>
     <ClInclude Include="Geometric.h">
       <Filter>Inheritance/Polymorphism</Filter>
     </ClInclude>
@@ -95,17 +92,8 @@
     <ClInclude Include="SLList.h">
       <Filter>Arrays, Linked Lists</Filter>
     </ClInclude>
-    <ClInclude Include="ArrayStack.h">
-      <Filter>5. Stacks, Queues, Deques\Stack</Filter>
-    </ClInclude>
-    <ClInclude Include="ArrayQueue.h">
-      <Filter>5. Stacks, Queues, Deques\Queue</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLdeque.h">
-      <Filter>5. Stacks, Queues, Deques\Deque</Filter>
-    </ClInclude>
-    <ClInclude Include="LinkedListStack.h">
-      <Filter>5. Stacks, Queues, Deques\Stack</Filter>
+    <ClInclude Include="2. OO Design/Stu.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
