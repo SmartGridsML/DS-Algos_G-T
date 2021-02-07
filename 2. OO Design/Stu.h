@@ -18,7 +18,7 @@ public:
 	{
 		std::cout << "two -arg Student ctor" << "\n";
 	}
-	~Student();
+	//~Student();
 
 	//Member Functions
 

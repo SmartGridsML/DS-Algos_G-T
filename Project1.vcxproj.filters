@@ -39,12 +39,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Person.cpp">
-      <Filter>Inheritance/Polymorphism</Filter>
-    </ClCompile>
-    <ClCompile Include="Stu.cpp">
-      <Filter>Inheritance/Polymorphism</Filter>
-    </ClCompile>
     <ClCompile Include="Progression.cpp">
       <Filter>Inheritance/Polymorphism</Filter>
     </ClCompile>
@@ -60,23 +54,29 @@
     <ClCompile Include="SLList.cpp">
       <Filter>Arrays, Linked Lists</Filter>
     </ClCompile>
-    <ClCompile Include="ArrayStack.cpp">
-      <Filter>5. Stacks, Queues, Deques\Stack</Filter>
+    <ClCompile Include="Stacks/ArrayStack.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ArrayQueue.cpp">
-      <Filter>5. Stacks, Queues, Deques\Queue</Filter>
+    <ClCompile Include="1 C++Primer/Basic_Elements_1.1.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DLLdeque.cpp">
-      <Filter>5. Stacks, Queues, Deques\Deque</Filter>
+    <ClCompile Include="Deque/DLLdeque.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedListStack.cpp">
-      <Filter>5. Stacks, Queues, Deques\Stack</Filter>
+    <ClCompile Include="Stacks/LinkedListStack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2. OO Design/Person.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Queues/ArrayQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2. OO Design/Stu.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Stu.h">
-      <Filter>Inheritance/Polymorphism</Filter>
-    </ClInclude>
     <ClInclude Include="Progression.h">
       <Filter>Inheritance/Polymorphism</Filter>
     </ClInclude>

@@ -10,7 +10,7 @@ void Student::print() {
 	std::cout << "IDNum: " << m_GradYr << "\n";
 }
 
-void changeMajor(const std::string& newMajor) {
+/*void changeMajor(const std::string& newMajor) {
 	m_Major = newMajor;
-}
+}*/
 

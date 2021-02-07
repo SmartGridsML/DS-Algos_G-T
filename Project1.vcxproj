@@ -140,17 +140,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arithmetic.cpp" />
-    <ClCompile Include="ArrayStack.cpp" />
-    <ClCompile Include="Basic_Elements_1.1.cpp" />
-    <ClCompile Include="DLLdeque.cpp" />
+    <ClCompile Include="Stacks/ArrayStack.cpp" />
+    <ClCompile Include="1 C++Primer/Basic_Elements_1.1.cpp" />
+    <ClCompile Include="Deque/DLLdeque.cpp" />
     <ClCompile Include="Geometric.cpp" />
-    <ClCompile Include="LinkedListStack.cpp" />
+    <ClCompile Include="Stacks/LinkedListStack.cpp" />
     <ClCompile Include="Progression.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Person.cpp" />
-    <ClCompile Include="ArrayQueue.cpp" />
+    <ClCompile Include="2. OO Design/Person.cpp" />
+    <ClCompile Include="Queues/ArrayQueue.cpp" />
     <ClCompile Include="SLList.cpp" />
-    <ClCompile Include="Stu.cpp" />
+    <ClCompile Include="2. OO Design/Stu.cpp" />
     <ClCompile Include="Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -163,8 +163,8 @@
     <ClInclude Include="Person.h" />
     <ClInclude Include="ArrayQueue.h" />
     <ClInclude Include="SLList.h" />
-    <ClInclude Include="Stu.h" />
     <ClInclude Include="Vector.h" />
+	<ClInclude Include="2. OO Design/Stu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
