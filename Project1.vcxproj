@@ -155,11 +155,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arithmetic.h" />
+    <ClInclude Include="ArrayStack.h" />
+    <ClInclude Include="DLLdeque.h" />
     <ClInclude Include="Geometric.h" />
+    <ClInclude Include="LinkedListStack.h" />
     <ClInclude Include="Progression.h" />
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="ArrayQueue.h" />
     <ClInclude Include="SLList.h" />
     <ClInclude Include="Vector.h" />
-    <ClInclude Include="2. OO Design/Stu.h" />
+	<ClInclude Include="2. OO Design/Stu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
