@@ -25,3 +25,4 @@ char *q = &c[0];		//q ALSO points to c[0]
 operator ~new~  
 
 */
+
