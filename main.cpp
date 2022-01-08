@@ -4,20 +4,18 @@
 #include <algorithm>
 #include <string>
 #include <stack>
-#include "2. OO Design/Stu.h"
-#include "2. OO Design/Person.h"
-#include "Progression.h"
-#include "Arithmetic.h"
-#include "Geometric.h"
+#include "OO Design/Stu.h"
+#include "OO Design/Person.h"
+#include "OO Design/Progression.h"
+#include "OO Design/Arithmetic.h"
+#include "OO Design/Geometric.h"
 #include "Stacks/ArrayStack.h"
 #include "Stacks/LinkedListStack.h"
 #include "Deque/DLLdeque.h"
 #include "Vector.h"
+#include "Arrays, LLists and Rec/SLList.h"
 
 
-
-
-//LIST ADT
 
 bool checkIfExist(std::vector<int>& arr) {
     std::sort(arr.begin(), arr.end());
@@ -34,42 +32,26 @@ bool checkIfExist(std::vector<int>& arr) {
     return false;
 }
 
-class Box
-{
-private:
-    double length{ 1.0 };
-    double width{ 1.0 };
-    double height{ 1.0 };
-public:
-    // Constructor
-    Box(double lengthValue, double widthValue, double heightValue)
-    {
-        std::cout << "Box constructor called." << std::endl;
-        length = lengthValue;
-        width = widthValue;
-        height = heightValue;
-    }
-};
-
 /*template <typename T>
 T minim(T a, T b)
 {
     return a < b ? a : b;
 }*/
 
+
+
 int main() {
 
-    //2.2.1 Member Functions
-    //an object of type Person(BASE) can accesspublic members of both classes
-    //However if student(CHILD) invokes the shared 'print' function
-    //it will use its own by default
+    //SinglyLinkedList test
 
-    //declare person object
-    Person pson("Mary ", "12-11");
-    Student st("Bob", "21-22", "Mathematics", 2024);
+    //SLList<int> myList;
+    /*myList.addFront(10);
+    myList.addFront(20);
+    int end = myList.end();
+    std::cout << end << "\n";*/
 
-    pson.print();
-    st.print();
-
+    std::vector<int> v{ 1,2,3,4 };
+    for (auto& i : v)
+        std::cout << i << "\t";
 	return 0;
 }

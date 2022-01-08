@@ -1,17 +1,11 @@
 //2.2 INHERITANCE AND POLYMORPHISM
 #include "Person.h"
-
-
-
-
-/*
-Important topic
+/* 
+!!!! Important topic  !!!!!
 Static Binding
-When a class is derived from a base class - derived class becomes a subtype o the base class.
+When a class is derived from a base class - derived class becomes a subtype of the base class.
 This means that we can use the derived class wherever the base class is acceptable. 
-e.g.
-
-
+e.g. let's create an array of pointers to people
 */
 
 Person* pArr[100];
@@ -21,8 +15,8 @@ pArr[1] = new Student("Carol", "34-927", "Physics", "2014");
 /*
 If we attempt to invoked the print function , we might assume the function Student::print()
 would be called. Surprisingly, Person::print is called in BOTH cases. 
-Moreover, pp[i] is not allowed access to the Student member functions.
-The reason is called static binding := when determining which member function to call C++'default action is to consider
+Moreover, pArr[i] is not allowed access to the Student member functions.
+The reason is called static binding ; when determining which member function to call C++'default action is to consider
 an object's declared type not its actual type. 
 
 Solution -> use dynamic binding. 
@@ -46,7 +40,7 @@ public:
 */
 
 //Virtual Destructors
-//If a base class defines an y virtual functions, it should define a virtual destructor even if it is empty
+//If a base class defines any virtual functions, it should define a virtual destructor even if it is empty
 
 //2.2.2 POLYMORPHISM
 /*

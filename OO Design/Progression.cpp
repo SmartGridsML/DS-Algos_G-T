@@ -1,14 +1,10 @@
 #include "Progression.h"
-//ctor
-Progression::Progression(long c, long f) 
-	: first{ f }, cur{ c }
-{
-}
+
+//dtor
 Progression::~Progression()
 {
 }
-//dtor
-//Progression::~Progression() {}
+
 //member functions
 long Progression::firstValue() {
 	cur = first;

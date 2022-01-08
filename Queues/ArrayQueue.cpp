@@ -1,8 +1,5 @@
 #include "ArrayQueue.h"
 
-//ctor
-
-
 template< typename E> bool  ArrayQueue<E>::ArrayQueue::isEmpty() const
 {
 	return S.empty();

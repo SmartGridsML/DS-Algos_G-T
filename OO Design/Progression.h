@@ -1,13 +1,20 @@
 #pragma once
 #include <iostream>
 class Progression {
+
 protected:
+
 	long first{};
 	long cur{};
 public:
-	//ctor
+
+	//default ctor
 	Progression() = default;
-	Progression(long c, long f);
+
+	//ctor
+	Progression(long c, long f)
+		: first{ f }, cur{ c }
+	{}
 	//dtor
 	virtual ~Progression();
 	//member functions

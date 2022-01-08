@@ -9,6 +9,14 @@ protected:
     virtual long nextValue();
 public:
     //ctor
-    Geometric(long b = 2);
+    //Geometric(long b = 2);
+    //ctor
+    Geometric(long b = 2)
+        :Progression(1, 1), base(b) {}
+
+    /*long nextValue() {
+        cur *= base;
+        return base;
+    }*/
 };
 

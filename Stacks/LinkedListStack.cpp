@@ -1,4 +1,5 @@
 #include "LinkedListStack.h"
+
 LinkedStack::LinkedStack()
 	: S{}, num{ 0 } {}
 

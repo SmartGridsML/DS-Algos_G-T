@@ -12,8 +12,7 @@ public:
 	//ctor
 	Student() = default;
 	//ctor
-	Student(std::string nm, std::string idNum,
-		std::string deg, int year)
+	Student(std::string nm, std::string idNum, std::string deg, int year)
 		: Person{ nm , idNum }, m_Major{ deg }, m_GradYr{ year }
 	{
 		std::cout << "two -arg Student ctor" << "\n";

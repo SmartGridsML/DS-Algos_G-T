@@ -1,16 +1,13 @@
 #pragma once
 /*
-Similar to stack, uses FIFO principle
-element enters at back; removed from front - just like a shop queue
+Similar to stack, however it uses FIFO principle
+An element enters at back; removed from front - just like a shop queue
 STL queue dynamically resizes itself as with vectors and stacks
 #include <queue>
 std::queue<T> myQ {};
 enqueue(e) insert elemnet e at rear
 dequeue() remove front element ( error if empty)
 front() return but do not remove, reference to fron element ( error if empty)
-
-
-
 */
 #include <vector>
 

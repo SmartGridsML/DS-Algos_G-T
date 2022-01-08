@@ -1,6 +1,9 @@
 /*
-extendable-array-based implementation
- array A
+6.1.3 Extendable-array-based implementation
+This improves upon simple array implementation, which requires advance
+specification of a fixed capacity N for total number of elements that
+may be stored in the vector. If the actual number of elements is smaller than N, memory will b wasted
+If n exceeds N, implementation will crash. 
 
 
 */
