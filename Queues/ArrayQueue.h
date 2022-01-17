@@ -9,17 +9,16 @@ enqueue(e) insert elemnet e at rear
 dequeue() remove front element ( error if empty)
 front() return but do not remove, reference to fron element ( error if empty)
 */
-#include <vector>
 
 template <typename E> 
 class ArrayQueue
 {
 private:
-	std::vector<E> S;
+	E* Q;
 public: 
 	//ctor
 	ArrayQueue()
-		:S{ new E } {}
+		:Q{ new E } {}
 	//accessors
 	int size() const;
 	bool isEmpty() const;

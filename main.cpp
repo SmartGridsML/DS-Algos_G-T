@@ -14,6 +14,9 @@
 #include "Deque/DLLdeque.h"
 #include "Vector.h"
 #include "Arrays, LLists and Rec/SLList.h"
+#include "Arrays, LLists and Rec/Scores.h"
+#include "Arrays, LLists and Rec/Array.h"
+#include "Stacks/ArrayStack.h"
 
 
 
@@ -38,6 +41,25 @@ T minim(T a, T b)
     return a < b ? a : b;
 }*/
 
+int GCD(int n, int m)
+{
+    int i = 1;
+    if (n > m)
+    {
+        
+        while (i > 0)
+        {
+            i = n % m;
+            n = m;
+            std::cout << "n" << n << "\n";
+            m = i;
+            std::cout << "m" << m << "\n";
+
+        }
+    }
+    return n;
+}
+
 
 
 int main() {
@@ -50,8 +72,26 @@ int main() {
     int end = myList.end();
     std::cout << end << "\n";*/
 
-    std::vector<int> v{ 1,2,3,4 };
+    /*std::vector<int> v{ 1,2,3,4 };
     for (auto& i : v)
         std::cout << i << "\t";
-	return 0;
+	*/
+    int n = 0;
+    n = GCD(80844, 25320);
+    std::cout << n;
+
+    GameEntry a ("John", 10);
+    GameEntry b("June", 20);
+
+    Scores s;
+    s.add(a);
+    s.add(b);
+
+    ArrayStack<int> as(4);
+    as.push(10);
+    as.top();
+
+
+
+    return 0;
 }
