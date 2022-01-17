@@ -1,5 +1,6 @@
 #include <stack>
 #include <vector>
+#include <string>
 
 //5.1.6 
 //Reversing a vector using a stack
@@ -24,11 +25,11 @@ void reverseVector(std::vector<int>& v)
 	}
 }
 
-//error cannot overload functions distiguished by return type alone 
-//std::vector<int> reverseVector(std::vector<int>& v)
-//{
-//
-//	return v;
-//}
+
 
 //5.1.7 Matching Parenthesis and HTML tags
+
+bool isParenMatching(const std::string s)
+{
+
+}

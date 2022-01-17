@@ -1,33 +1,41 @@
 #pragma once
 
 /*
+* 5.1.4
 STACK data structure:
 Only last object inserted (TOP) can be removed at any time. 
+Using fixed arrays
 */
-#include <vector>
+
+constexpr int SIZE = 100;
 
 template < class E >
 class ArrayStack //: public RuntimeException
 {
 private:
-	std::vector<E> S;
+	E* S ; // array of stack elements
+	int capacity;
+	int t;
+
 public:
 	//default ctor
 	ArrayStack() = default;
-
+	ArrayStack(int size = SIZE);
 	//copy ctor
 	ArrayStack(const ArrayStack& obj) { *this = obj; };
 
 	//MEMBER FUNCTIONS
-	int size() const { return S.size(); }
-	bool isEmpty() const { return S.empty(); }
-	const E& top() { if (!isEmpty()) return S.back(); }
-	void push(const E& e) { S.push_back(e); }
-	void pop() { S.pop_back(); };
-	bool operator==(const ArrayStack& rhs)
+	int size() const;
+	bool isEmpty() const;
+	bool isFull() const;
+	const E& top();
+	void push(const E& e);
+	void pop();
+	//checks if stacks are equal
+	/*bool operator==(const ArrayStack& rhs)
 	{
 		return S == rhs;
-	}
+	}*/
 	//dtor
 	~ArrayStack();
 };
