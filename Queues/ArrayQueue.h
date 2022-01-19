@@ -10,15 +10,20 @@ dequeue() remove front element ( error if empty)
 front() return but do not remove, reference to fron element ( error if empty)
 */
 
+constexpr int SIZE = 100;
+
 template <typename E> 
 class ArrayQueue
 {
 private:
 	E* Q;
+	int front;
+	int rear;
+
 public: 
 	//ctor
 	ArrayQueue()
-		:Q{ new E } {}
+		: Q{ new E[] },   front(-1) , rear(-1) {}
 	//accessors
 	int size() const;
 	bool isEmpty() const;
@@ -39,3 +44,28 @@ public:
 			{}
 };
 */
+
+template< typename E> bool  ArrayQueue<E>::ArrayQueue::isEmpty() const
+{
+	return Q.empty();
+}
+
+template< typename E> int  ArrayQueue<E>::ArrayQueue::size() const
+{
+	return Q.size();
+}
+
+template< typename E> const E& ArrayQueue<E>::ArrayQueue::front()
+{
+	return Q.front();
+}
+
+template< typename E> void  ArrayQueue<E>::ArrayQueue::enqueue(const E&)
+{
+	return Q.push_back();
+}
+
+template< typename E> void  ArrayQueue<E>::ArrayQueue::dequeue()
+{
+	return Q.erase();
+}
